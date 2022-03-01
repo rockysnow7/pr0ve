@@ -1,0 +1,25 @@
+?start: stmt*
+
+?stmt: PREMISE a -> premise_stmt
+     | CONCLUSION a -> conclusion_stmt
+
+?a: b
+  | a "&" b -> l_and
+
+?b: c
+  | b "->" c -> l_implies
+
+?c: atom
+  | c "|" atom -> l_or
+
+?atom: NAME -> variable
+     | "¬" atom -> l_not
+     | "(" a ")"
+
+NAME: /[A-Z]/
+PREMISE: /P\d+\./
+CONCLUSION: /C\d+\./
+
+%import common.WS
+
+%ignore WS
