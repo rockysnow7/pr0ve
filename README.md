@@ -13,9 +13,9 @@ with basic ones.
 
 ## Usage
 
-Proofs are written as a series of premises ("P1", "P2", etc.) and conclusions.
-Each of these contains a sentence, which consists of some combination of
-letters, operators, and brackets.
+Proofs are written as a series of premises ("P1", "P2", etc.) and conclusions
+("C1", "C2", etc.). Each of these contains a sentence, which consists of some
+combination of letters, operators, and brackets.
 
 The supported operators are `&` (and), `->` (implies), `|` (or), and `¬` (not).
 
