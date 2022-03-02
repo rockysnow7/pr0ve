@@ -33,8 +33,8 @@ X | (Y -> ¬X)
 And an example argument:
 
 ```
-P1. A | B
-P2. ¬A
+P1. B -> C
+P2. B
 C1. C
 ```
 
